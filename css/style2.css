@@ -7,7 +7,69 @@ use float to make something locate itself on the right or left
 
 */
 
+/* Changed font and color from style 1 */
+#main-title{
+    color: #fdfdff;
+    font-family: Cinzel, serif;
+    text-align: center;
+    font-size: 4rem
+}
+
+/*Added a fixed background image*/
+
 body{
     padding: 30px;
-    background-color: #ffffff;
+    background-image: url("../assets/images/garden.jpg");
+    background-attachment: fixed;
 }
+
+
+/*Set all headers to use a different color and font*/
+h2{
+    color: #fdfdff;
+    font-family: Cinzel, serif;
+}
+
+/*Made each section a pretty box with corners, font colors, and set floating on different edges */
+.section{
+    color: #f1ffcf;
+    background-color: #212922;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+#courses {
+    max-width: 60%;
+    float: left;
+}
+
+#faculty {
+    float: right;
+    /*max-width: 200px;*/
+    min-width: 30%;
+}
+
+/*Arranged the faculty pictures in a square*/
+#faculty>ul{
+    column-count: 2;
+}
+
+#pslo{
+    float: right;
+}
+
+
+img.pic {
+    height: 150px;
+    width: 150px;
+    border: 3px solid #3e6259;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #212922;
+  }
