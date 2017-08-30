@@ -59,17 +59,34 @@ h2{
     float: right;
 }
 
-
 img.pic {
     height: 150px;
     width: 150px;
     border: 3px solid #3e6259;
 }
 
-#footer{
-    position: absolute;
+#style li a {
+    display: block;
+    color: #f1ffcf;
+    text-decoration: none;
+}
+
+#style li {
+    float: left;
+    margin-right: 40px;
+}
+
+#style{
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-    height: 60px;
+    height: 35px;
     background-color: #212922;
+    border-radius: 16px 16px 0px 0px
+  }
+
+  #style li a:hover {
+      color: #3e6259;
+      text-shadow: 1px 3px #212922;
   }
