@@ -5,9 +5,98 @@ use . in front of the name of a class of things from your html page
 use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 
+coolors.co link for pallette
+https://coolors.co/ffba54-eda740-fff0db-4f4639-efc27f
 */
 
+
+/*used the grid layout system for content*/
 body{
-    padding: 30px;
-    background-color: #aaaaaa;
+    display: grid;
+    transform: translate(0px,45px);
+    grid-template-columns: [col1-start] 1fr  [col2-start] 1fr [col2-end];
+    grid-template-rows: [row0-start] 150px [row1-start] 350px [row2-start] auto [row2-end];
+
+    background-color: #fff0db;
+    background-image: url("../assets/images/autumnleaf.png");
+    background-attachment: fixed;
+}
+
+#courses {
+    grid-column: col2-start;
+    grid-row: row2-start
+}
+
+#pslo{
+    grid-column: col1-start;
+    grid-row: row2-start;
+}
+
+#faculty {
+    grid-column: col1-start/col2-end ;
+    grid-row: row1-start;
+}
+
+#faculty>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*used a transform to position header precisely, outside of body.*/
+#style {
+    transform: translate(0px,-60px);
+    top: 0;
+    right:0;
+    left:0;
+    position: fixed;
+}
+
+/*used a nested flexbox to organize links horizontally*/
+#style>ul{
+    display: flex;
+    justify-content: space-around;
+    min-height: auto;
+
+    color: #4f4639;
+    background-color: #efc27f;
+    border-radius: 8px;
+    border: 2px dashed #4f4639;
+    box-shadow: 0 0 0 4px #efc27f, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+/*used and selecting to strip link decorations*/
+#style li a{
+    color: #4f4639;
+    text-decoration: none;
+}
+
+#main-title{
+    grid-column: col1-start/col2-end;
+    grid-row: row0-start;
+    text-align: center;
+    font-size: 2.75rem;
+
+    color: #4f4639;
+    background-color: #efc27f;
+    border-radius: 8px;
+    border: 2px dashed #4f4639;
+    box-shadow: 0 0 0 4px #efc27f, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+
+}
+
+/*created a stitched look in pure css*/
+.section{
+    color: #4f4639;
+    background-color: #efc27f;
+    padding: 1em;
+    border-radius: 8px;
+    margin: 20px;
+    border: 2px dashed #4f4639;
+    box-shadow: 0 0 0 4px #efc27f, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+}
+
+img.pic {
+    height: 175px;
+    width: 175px;
+    border: 3px solid #ffba54;
 }
