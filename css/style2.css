@@ -50,7 +50,7 @@ h2{
     min-width: 30%;
 }
 
-/*Arranged the faculty pictures in a square*/
+/*Arranged the faculty pictures in a square, selecting only caption picture combos*/
 #faculty>ul{
     column-count: 2;
 }
@@ -82,7 +82,7 @@ img.pic {
     left: 0;
     width: 100%;
     height: 35px;
-    background-color: #212922;
+    background-color: #161c17;
     border-radius: 16px 16px 0px 0px
   }
 
